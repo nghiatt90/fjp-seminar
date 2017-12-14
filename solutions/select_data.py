@@ -1,0 +1,1 @@
+data.loc[::2, data.columns != 'Survived']
