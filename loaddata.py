@@ -1,6 +1,6 @@
 import pandas as pd
 
-pd.set_option('max.rows', 6)
+pd.set_option('max.rows', 14)
 
 data = pd.read_csv(
     'data/titanic.csv',
