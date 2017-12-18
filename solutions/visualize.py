@@ -1,3 +1,7 @@
+# Lý do là những người xuất phát từ cảng C chủ yếu thuộc nhóm Pclass = 1.
+# Tuy số người Pclass = 1 xuất phát từ S nhiều hơn từ C
+# nhưng cảng S là nơi nhiều người xuất phát nhất, nên tỉ lệ bị kéo xuống.
+
 f, ax = plt.subplots(2, 2, figsize=(20, 15))
 sns.countplot('Embarked', data=data, ax=ax[0, 0])
 ax[0, 0].set_title('No. Of Passengers Boarded')
