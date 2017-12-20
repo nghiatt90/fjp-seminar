@@ -16,3 +16,4 @@ data = pd.read_csv(
 data['Age'] = (data['Age'].fillna(data['Age'].mean())
                           .astype(int))
 data['Embarked'].fillna(data['Embarked'].mode()[0], inplace=True)
+
