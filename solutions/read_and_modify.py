@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv(
+data_train = pd.read_csv(
     'data/titanic_train.csv',
     index_col='PassengerId',
     usecols=lambda col: col not in ('Cabin', 'Ticket'),
