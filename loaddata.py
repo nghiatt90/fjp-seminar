@@ -1,30 +1,33 @@
 import pandas as pd
-import copy
 import re
 
 
 pd.set_option('max.rows', 14)
 
-data = pd.read_csv(
-    'data/titanic.csv',
-    index_col='PassengerId',
-    usecols=lambda col: col not in ('Cabin', 'Ticket'),
-    dtype={
-        'Pclass': 'category',
-        'Sex': 'category',
-        'Embarked': 'category'
-    }
+data = pd.concat(
+    pd.read_csv(
+        csv_file,
+        index_col='PassengerId',
+        usecols=lambda col: col not in ('Cabin', 'Ticket'),
+        dtype={
+            'Pclass': 'category',
+            'Sex': 'category',
+            'Embarked': 'category',
+        }
+    )
+    for csv_file in ['data/titanic_train.csv', 'data/titanic_test.csv']
 )
 
 data['Age'] = (data['Age'].fillna(data['Age'].mean())
                           .astype(int))
 data['Embarked'].fillna(data['Embarked'].mode()[0], inplace=True)
+data['Fare'].fillna(7.5, inplace=True)
 
 
 def get_title_from_name(name):
     m = re.search(' ([A-Za-z]*)\.', name)
     if not m:
-        raise ValueError(f'Name doesn\'t match pattern: {name}')
+        raise ValueError(f"Name doesn't match pattern: {name}")
     return m.group(1)
 
 
