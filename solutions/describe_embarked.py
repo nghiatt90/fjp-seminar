@@ -1,0 +1,1 @@
+data['Embarked'].describe()

@@ -1,0 +1,12 @@
+Variables:
+==========
+survival: Có hay không sống sót. 0 = No, 1 = Yes
+pclass  : Hạng vé. Chia làm 3 hạng 1-3 với 1 là cao cấp nhất
+sex     : Giới tính
+age     : Tuổi. Nếu tuối ước đoán thì có dạng xx.5
+sibsp	: Số anh em + vợ/chồng trên tàu
+parch	: Số bố mẹ, con cái trên tàu
+ticket	: Mã số vé
+fare	: Giá vé
+cabin	: Số phòng
+embarked: Cảng lên tàu. C = Cherbourg, Q = Queenstown, S = Southampton
