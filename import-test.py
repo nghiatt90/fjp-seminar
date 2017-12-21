@@ -1,8 +1,8 @@
-import requests
-import numpy as np
-from scipy import linalg
 import matplotlib.pyplot as plt
-import seaborn as sns
+import numpy as np
 import pandas as pd
-from sklearn.preprocessing import Normalizer
+import re
+import seaborn as sns
+import sklearn
+
 print("All imports succeeded.")
