@@ -1,4 +1,4 @@
-with open('data/titanic.csv') as csv_file:
+with open('data/titanic_train.csv') as csv_file:
     for _ in csv_file:
         pass
     csv_file.seek(0)

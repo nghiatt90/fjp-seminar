@@ -8,6 +8,6 @@ def remove_attribute(entry, attribute_to_delete='Ticket'):
     return entry
 
 
-with open('data/titanic.json') as json_file:
+with open('data/titanic_train.json') as json_file:
     data = json.load(json_file, object_hook=remove_attribute)
     pprint(data[0])
