@@ -1,6 +1,3 @@
-# fjp-seminar
-Preparation for my talk on Data Science and Machine Learning in FPT Japan Co., Ltd. Everything is in Vietnamese.
-
 ## Goal
 
 Người tham gia sẽ được làm quen với việc sử dụng Python để giải quyết 1 bài toán trong Data Science.
@@ -13,7 +10,7 @@ Chuẩn bị trước 1 chút kiến thức cơ bản về Python.
 Clone repository này. Có thể dùng command line:
 
 ```bash
-git clone git@github.com:nghiatt90/fjp-seminar.git
+git clone https://github.com/nghiatt90/fjp-seminar.git
 ```
 
 Hoặc có thể download trực tiếp từ GitHub.
