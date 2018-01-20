@@ -20,8 +20,10 @@ Download Anaconda: https://www.anaconda.com/download/
 Cài đặt sẵn các module, thư viện cần thiết
 
 ```python
-conda env create -f environment.yaml
+conda env create -f environment.yml
 source activate fjp-seminar-1
+# For Windows:
+activate fjp-seminar-1
 ```
 
 Thử chạy Jupyter Notebooks
